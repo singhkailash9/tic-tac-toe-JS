@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgba(97, 233, 233, 0.502);
+}
+
+.nav {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: rgb(172, 228, 107);
+    color: rgb(57, 88, 214);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.gamebox {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+
+.score {
+    font-size: 1.3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+    width: 15vw;
+}
+
+#reset {
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    font-size: 1.2rem;
+    margin: 5px 6px 2px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.boxtext {
+    text-align: center;
+    font-size: 6vw;
+}
+
+.box:hover {
+    background-color: rgba(200, 245, 245, 0.458);
+    cursor: pointer;
+}
+
+.infotext {
+    font-size: 2.5rem;
+    padding: 3px 6px;
+}
+.styletext{
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    border-radius: 6px;
+}
+
+.currentscore {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.box {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+@media screen and (max-width:600px) {
+    .nav{
+        font-size: 2rem;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gamebox {
+        display: grid;
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .infotext {
+        margin-top: 5vh;
+    }
+    .score{
+        width: 60vw;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:600px) {
+    .nav{
+        font-size: 3.6rem;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gamebox {
+        display: grid;
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .infotext{
+        font-size: 4rem;
+    }
+    .score{
+        width: 60vw;
+    }
+    #reset{
+        font-size: 3rem;
+    }
+}
